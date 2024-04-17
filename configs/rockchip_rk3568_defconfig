@@ -1,23 +1,23 @@
 #include "base/base.config"
 #include "chips/rk3566_rk3568_aarch64.config"
-#include "font/chinese.config"
 #include "fs/exfat.config"
 #include "fs/ntfs.config"
 #include "fs/vfat.config"
-#include "gpu/gpu.config"
-#include "multimedia/audio.config"
-#include "multimedia/camera.config"
-#include "multimedia/gst/audio.config"
-#include "multimedia/gst/camera.config"
-#include "multimedia/gst/rtsp.config"
-#include "multimedia/gst/video.config"
-#include "multimedia/mpp.config"
 #include "wifibt/bt.config"
 #include "wifibt/wireless.config"
-#include "tools/benchmark.config"
-#include "tools/common.config"
-#include "tools/test.config"
-#include "chromium.config"
-#include "npu2.config"
-#include "powermanager.config"
-#include "weston.config"
+#include "wifibt/network.config"
+BR2_PACKAGE_PV=y
+BR2_PACKAGE_JQ=y
+BR2_PACKAGE_NCURSES_TARGET_PROGS=y
+BR2_PACKAGE_UTIL_LINUX_BINARIES=y
+BR2_PACKAGE_NEWT=y
+BR2_PACKAGE_NETWORK_MANAGER=y
+BR2_PACKAGE_NETWORK_MANAGER_TUI=y
+BR2_PACKAGE_WGET=y
+BR2_PACKAGE_CA_CERTIFICATES=y
+BR2_PACKAGE_COREUTILS=y
+BR2_PACKAGE_SUDO=y
+BR2_PACKAGE_GZIP=y
+BR2_PACKAGE_WPA_SUPPLICANT_DBUS=y
+BR2_PACKAGE_WPA_SUPPLICANT_DBUS_INTROSPECTION=y
+BR2_PACKAGE_RKSCRIPT_IODOMAIN_NOTICE=N
