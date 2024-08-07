@@ -26,7 +26,7 @@ export WESTON_DRM_MIN_BUFFERS=2
 # Override initial freezing time
 # export WESTON_DRM_INITIAL_FREEZE_MS=100
 
-# Override output's freezing time
+# Override output's resized freezing time
 # export WESTON_DRM_RESIZE_FREEZE_MS=1000
 
 # Primary screen
@@ -59,6 +59,12 @@ export WESTON_DRM_KEEP_RATIO=1
 # Tag file for freezing weston display
 export WESTON_FREEZE_DISPLAY=/tmp/.freeze_weston
 
+# Wrap pointer around the outputs
+# export WESTON_WRAP_POINTER=1
+
+# Try to pin views to the assigned output
+# export WESTON_OUTPUT_PIN=1
+
 # Set dynamic config file path
 # export WESTON_DRM_CONFIG=/tmp/.weston_drm.conf
 #
@@ -74,6 +80,11 @@ export WESTON_FREEZE_DISPLAY=/tmp/.freeze_weston
 # echo "compositor:hotplug:force" > /tmp/.weston_drm.conf
 # echo "compositor:cursor:hide" > /tmp/.weston_drm.conf
 # echo "compositor:cursor:show" > /tmp/.weston_drm.conf
+# echo "compositor:output:pin" > /tmp/.weston_drm.conf
+# echo "compositor:output:unpin" > /tmp/.weston_drm.conf
+# echo "output:DSI-1:state=off" >> /tmp/.weston_drm.conf
+# echo "output:DSI-1:state=on" >> /tmp/.weston_drm.conf
+# echo "output:DSI-1:state=detect" >> /tmp/.weston_drm.conf
 # echo "output:DSI-1:off" > /tmp/.weston_drm.conf
 # echo "output:eDP-1:freeze" > /tmp/.weston_drm.conf
 # echo "output:DSI-1:offscreen" > /tmp/.weston_drm.conf
@@ -90,3 +101,4 @@ export WESTON_FREEZE_DISPLAY=/tmp/.freeze_weston
 # echo "output:HDMI-A-1:input=event6" > /tmp/.weston_drm.conf
 # echo "output:HDMI-A-1:input=goodix*" > /tmp/.weston_drm.conf
 # echo "output:HDMI-A-1:input=goodix-ts" > /tmp/.weston_drm.conf
+# echo "output:HDMI-A-1:refresh" >> /tmp/.weston_drm.conf
